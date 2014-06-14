@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -48,7 +48,7 @@
         <a class="navbar-brand" href="#">Blog Railistico del otro mundo</a>
         <% if user_signed_in? -%>
           <div id="user_login_box">
-            <button type="button navbar-brand"><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+            <button type="button" class="btn btn-default" style="margin:10px 0 10px;"><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
 </button>
           </div>
         <% end -%>
