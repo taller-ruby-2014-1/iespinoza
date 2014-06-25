@@ -45,7 +45,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Blog Railistico del otro mundo</a>
+        <a class="navbar-brand" href="<%= welcome_index_path %>">Blog Railistico del otro mundo</a>
         <% if user_signed_in? -%>
           <div id="user_login_box" style="margin:10px 0 10px;">
             <%= link_to 'Sign out', destroy_user_session_path, :method => :delete, :class => 'btn btn-primary btn-sm' %>
