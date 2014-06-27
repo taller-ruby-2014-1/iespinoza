@@ -1,10 +1,10 @@
 <p>
-	<strong>Commenter:</strong>
-	<%= comment.commenter %>
+	<h4><%= comment.commenter %></h4>
 </p>
 <p>
-	<strong>Comment:</strong>
-	<%= comment.body %>
+	<div style="border:1px solid grey;border-radius:10px;padding:10px 7px 10px 7px;display: inline-block;">
+		<%= comment.body %>
+	</div>
 </p>
 <p>
 	<%= link_to 'Destroy Comment',

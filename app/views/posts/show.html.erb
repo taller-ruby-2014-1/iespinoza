@@ -1,11 +1,13 @@
-<p>
-	<strong>Title:</strong>
-	<%= @post.title %>
-</p>
-<p>
-	<strong>Text:</strong>
-	<%= @post.text %>
-</p>
+<div>
+	<p>
+		<h3><%= @post.title %></h3>
+	</p>
+	<p>
+		<div style="border:1px solid grey;border-radius:10px;padding:15px 10px 15px 10px;display: inline-block;">
+		<%= @post.text %>
+		</div>
+	</p>
+</div>
 
 <%= link_to 'Back', posts_path, :class => 'btn btn-primary btn-sm'  %>
 <%= link_to 'Edit', edit_post_path(@post), :class => 'btn btn-warning btn-sm' %>
